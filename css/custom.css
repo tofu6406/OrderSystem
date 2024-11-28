@@ -27,6 +27,12 @@ html, body{
 	margin-left: 5%;
 }
 
+.highlight {
+	font-size: 1.5em; /* 文字サイズを大きく */
+	color: #ff6347; /* 文字色を変更（オレンジ色） */
+	font-weight: bold; /* 太字に設定 */
+}
+
 .top button {
 	margin-top: 10px;
 	width: 200px;
@@ -40,6 +46,7 @@ html, body{
 .intro {
 	height: 200px;
 	text-align: center;
+	margin: 50px 0 30px 0;
 }
 
 .intro .intro-title {
@@ -80,11 +87,67 @@ html, body{
 	}
 }
 
+.problem {
+	background-color: #add8e6;
+	text-align: center;
+	padding: 120px 0 50px 0;
+	position: relative;
+	margin: auto;
+}
 
+.problem hr {
+	width: 10%; /* 水平線の幅 */
+	height: 10px; /* 水平線の高さ */
+	background-color: #fff; /* 水平線の色 */
+	border: none; /* デフォルトの境界線を消去 */
+	margin: 20px auto; /* 上下の余白と中央揃え */
+}
 
+.problem #triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 50px solid #fff;
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	transform: translate(-50%, 0); /* 要素の中心を基準に移動 */
+}
 
+.problem h1 {
+	margin-bottom: 20px
+}
 
+.solution {
+	text-align: center;
+	padding: 120px 0 50px 0;
+	position: relative;
+}
 
+.solution hr {
+	width: 10%; /* 水平線の幅 */
+	height: 10px; /* 水平線の高さ */
+	background-color: #add8e6; /* 水平線の色 */
+	border: none; /* デフォルトの境界線を消去 */
+	margin: 20px auto; /* 上下の余白と中央揃え */
+}
+
+.solution #triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 50px solid #add8e6;
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	transform: translate(-50%, 0); /* 要素の中心を基準に移動 */
+}
+
+.colution h1 {
+	margin-bottom: 20px
+}
 
 @media screen and (max-width: 414px) {
 
